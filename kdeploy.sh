@@ -12,7 +12,7 @@ fi
 
 # Go To Public folder
 cd $des
-rm -rf *
+rm -rf *  # kalyan has put this
 cd ../
 
 # Build the project.
@@ -40,6 +40,3 @@ cd ../
 
 # Update algolia index
 python hugo_algolia.py ALGOLIA_API_KEY="38a399cece101dd402089511762960fe"
-
-# Start Server
-#hugo server
