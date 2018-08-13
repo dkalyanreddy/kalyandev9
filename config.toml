@@ -1,0 +1,178 @@
+baseurl = "https://kalyanreddy.com/"
+DefaultContentLanguage = "en"
+hasCJKLanguage = true
+languageCode = "en"
+title = "Kalyan Reddy"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsUseClasses = false
+pygmentCodeFences = true
+#googleAnalytics = "XXX"
+
+[Params]
+hello = "Hi,I'm Kalyan"
+subtitle = "I can help you to build Cloud Native confidence"
+logo = "https://res.cloudinary.com/kalyanreddy/image/upload/v1534153201/kalyan-blog/kalyan2.jpg"
+favicon = "https://res.cloudinary.com/kalyanreddy/image/upload/v1534147866/kalyan-blog/favicon.ico"
+share_img = "https://ws4.sinaimg.cn/large/006tKfTcly1ft1oje0atgj31kw1kzk1j.jpg"
+dateFormat = "January 2, 2006"
+commit = false
+rss = true
+#baiduKey = "11f7d254cfa4e0ca44b175c66d379ecc"
+#comments = false
+#sharebutton = true
+algolia = "7d7eba503e8260e115e3f9a6a716baaf" # API key
+#gcse = "012737790962522169780:fd1izxsfgrs" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+description = "Kalyan Reddy's Blog|Analyst, Architect|kalyanreddy.com"
+errorpage = "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150222/kalyan-blog/404.png"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA1.jpg"
+desc = "I ❤️  #Kubernetes - Jul 21,2018"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA2.jpg"
+desc = "I ❤️  #Kubernetes - Jul 22,2018"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA3.jpg"
+desc = "I ❤️  #Kubernetes - Jul 23,2018"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA4.jpg"
+desc = "I ❤️  #Kubernetes - Jul 24,2018"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA5.jpg"
+desc = "I ❤️  #Kubernetes - Jul 25,2018"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA6.jpg"
+desc = "I ❤️  #Kubernetes - Jul 26,2018"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA7.jpg"
+desc = "I ❤️  #Kubernetes - Jul 27,2018"
+
+[Author]
+  name = "Kalyan Reddy"
+  website = "https://kalyanreddy.com"
+  #email = "kalyanreddy@kalyanreddy.com"
+  facebook = "kalyanreddy"
+  #googleplus = "+kalyanreddy" # or xxxxxxxxxxxxxxxxxxxxx
+  github = "dkalyanreddy"
+  twitter = "kalyanreddy"
+  linkedin = "kalyanreddy"
+  #medium = "kalyanreddy"
+  #instagram = "kalyanreddy"
+
+[[menu.main]]
+    identifier = "cloud"
+    name = "cloud"
+    weight = 1
+
+[[menu.main]]
+    parent = "cloud"
+    name = "AWS"
+    url = "cloud/aws"
+    weight = 1
+
+[[menu.main]]
+    parent = "cloud"
+    name = "Azure"
+    url = "cloud/azure"
+    weight = 2
+
+[[menu.main]]
+    parent = "cloud"
+    name = "Google Cloud"
+    url = "cloud/google"
+    weight = 3
+
+[[menu.main]]
+    parent = "cloud"
+    name = "Open Stack"
+    url = "cloud/openstack"
+    weight = 4
+
+[[menu.main]]
+    parent = "cloud"
+    name = "Digital Ocean"
+    url = "cloud/digital-ocean"
+    weight = 5
+
+[[menu.main]]
+    parent = "cloud"
+    name = "Tags"
+    url = "tags"
+    weight = 6	
+
+[[menu.main]]
+    identifier = "kubernetes"
+    name = "Kubernetes"
+    weight = 1
+
+[[menu.main]]
+    parent = "kubernetes"
+    name = "Architecture"
+    url = "kubernetes/architecture"
+    weight = 1
+
+[[menu.main]]
+    parent = "kubernetes"
+    name = "Pods"
+    url = "kubernetes/pods"
+    weight = 2
+
+[[menu.main]]
+    parent = "kubernetes"
+    name = "Controllers"
+    url = "kubernetes/controllers"
+    weight = 3
+
+[[menu.main]]
+    parent = "kubernetes"
+    name = "Services"
+    url = "kubernetes/services"
+    weight = 4
+
+[[menu.main]]
+    parent = "kubernetes"
+    name = "Ingress"
+    url = "kubernetes/ingress"
+    weight = 5
+
+[[menu.main]]
+    parent = "kubernetes"
+    name = "Network"
+    url = "kubernetes/network"
+    weight = 6
+
+[[menu.main]]
+    parent = "kubernetes"
+    name = "Load Balancing"
+    url = "kubernetes/loadbalancing"
+    weight = 7
+	
+[[menu.main]]
+    parent = "kubernetes"
+    name = "Storage"
+    url = "kubernetes/storage"
+    weight = 8
+	
+[[menu.main]]
+    parent = "kubernetes"
+    name = "Policies"
+    url = "kubernetes/policies"
+    weight = 9
+	
+[[menu.main]]
+    parent = "kubernetes"
+    name = "Tags"
+    url = "tags"
+    weight = 10		
+	
+[[menu.main]]
+    name = "About"
+    url = "about"
+    weight = 5

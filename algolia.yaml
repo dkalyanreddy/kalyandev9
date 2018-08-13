@@ -1,0 +1,11 @@
+---
+baseurl: "https://kalyanreddy.com/"
+DefaultContentLanguage: "en"
+hasCJKLanguage: false
+languageCode: "en"
+title: "Kalyan Reddy"
+theme: "beautifulhugo"
+metaDataFormat: "yaml"
+subtitle: "I can help you building Cloud Native confidence"
+dateFormat: "January 2, 2006"
+---
