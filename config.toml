@@ -67,110 +67,57 @@ desc = "I ❤️  #Kubernetes - Jul 27,2018"
   #instagram = "kalyanreddy"
 
 [[menu.main]]
-    identifier = "cloud"
-    name = "cloud"
+    identifier = "Categories"
+    name = "Categories"
     weight = 1
 
 [[menu.main]]
-    parent = "cloud"
-    name = "AWS"
-    url = "cloud/aws"
+    parent = "Categories"
+    name = "kubernetes"
+    url = "categories/kubernetes"
     weight = 1
 
 [[menu.main]]
-    parent = "cloud"
-    name = "Azure"
-    url = "cloud/azure"
+    parent = "Categories"
+    name = "Cloud Native"
+    url = "categories/cloud-native"
     weight = 2
 
 [[menu.main]]
-    parent = "cloud"
-    name = "Google Cloud"
-    url = "cloud/google"
+    parent = "Categories"
+    name = "Microservices"
+    url = "categories/microservices"
     weight = 3
 
 [[menu.main]]
-    parent = "cloud"
-    name = "Open Stack"
-    url = "cloud/openstack"
+    parent = "Categories"
+    name = "Devops"
+    url = "categories/devops"
     weight = 4
 
 [[menu.main]]
-    parent = "cloud"
-    name = "Digital Ocean"
-    url = "cloud/digital-ocean"
+    parent = "Categories"
+    name = "Github"
+    url = "categories/github"
     weight = 5
 
 [[menu.main]]
-    parent = "cloud"
-    name = "Tags"
-    url = "tags"
-    weight = 6	
-
-[[menu.main]]
-    identifier = "kubernetes"
-    name = "Kubernetes"
-    weight = 1
-
-[[menu.main]]
-    parent = "kubernetes"
-    name = "Architecture"
-    url = "kubernetes/architecture"
-    weight = 1
-
-[[menu.main]]
-    parent = "kubernetes"
-    name = "Pods"
-    url = "kubernetes/pods"
-    weight = 2
-
-[[menu.main]]
-    parent = "kubernetes"
-    name = "Controllers"
-    url = "kubernetes/controllers"
-    weight = 3
-
-[[menu.main]]
-    parent = "kubernetes"
-    name = "Services"
-    url = "kubernetes/services"
-    weight = 4
-
-[[menu.main]]
-    parent = "kubernetes"
-    name = "Ingress"
-    url = "kubernetes/ingress"
-    weight = 5
-
-[[menu.main]]
-    parent = "kubernetes"
-    name = "Network"
-    url = "kubernetes/network"
+    parent = "Categories"
+    name = "Serverless"
+    url = "categories/serverless"
     weight = 6
 
 [[menu.main]]
-    parent = "kubernetes"
-    name = "Load Balancing"
-    url = "kubernetes/loadbalancing"
+    parent = "Categories"
+    name = "Service Mesh"
+    url = "categories/service-mesh"
     weight = 7
-	
+
 [[menu.main]]
-    parent = "kubernetes"
-    name = "Storage"
-    url = "kubernetes/storage"
-    weight = 8
-	
-[[menu.main]]
-    parent = "kubernetes"
-    name = "Policies"
-    url = "kubernetes/policies"
-    weight = 9
-	
-[[menu.main]]
-    parent = "kubernetes"
+    parent = "Categories"
     name = "Tags"
     url = "tags"
-    weight = 10		
+    weight = 8
 	
 [[menu.main]]
     name = "About"
