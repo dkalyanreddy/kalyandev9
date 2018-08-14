@@ -1,11 +1,11 @@
 ---
 title: "Kalyan Post3"
 date: 2018-08-14T10:20:21+05:30
-bigimg: [{src: "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA3.jpg", desc: "POST2"}]
 draft: false
 notoc: true
-tags: ["pods"]
-kubernetes: ["pods"]
+tags: ["kubernetes"]
+categories: ["kubernetes"]
+bigimg: [{src: "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA5.jpg", desc: "Post3|Apr 7,2018"}]
 ---
 
 ### Pods

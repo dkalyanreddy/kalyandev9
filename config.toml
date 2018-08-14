@@ -58,11 +58,11 @@ desc = "I ❤️  #Kubernetes - Jul 27,2018"
   name = "Kalyan Reddy"
   website = "https://kalyanreddy.com"
   #email = "kalyanreddy@kalyanreddy.com"
-  facebook = "kalyanreddy"
+  #facebook = "kalyanreddy"
   #googleplus = "+kalyanreddy" # or xxxxxxxxxxxxxxxxxxxxx
   github = "dkalyanreddy"
   twitter = "kalyanreddy"
-  linkedin = "kalyanreddy"
+  linkedin = "dkalyanreddy"
   #medium = "kalyanreddy"
   #instagram = "kalyanreddy"
 
@@ -79,46 +79,22 @@ desc = "I ❤️  #Kubernetes - Jul 27,2018"
 
 [[menu.main]]
     parent = "Categories"
-    name = "Cloud Native"
-    url = "categories/cloud-native"
+    name = "Istio"
+    url = "categories/istio"
     weight = 2
-
+	
 [[menu.main]]
     parent = "Categories"
-    name = "Microservices"
-    url = "categories/microservices"
+    name = "AWS"
+    url = "categories/aws"
     weight = 3
-
-[[menu.main]]
-    parent = "Categories"
-    name = "Devops"
-    url = "categories/devops"
-    weight = 4
-
-[[menu.main]]
-    parent = "Categories"
-    name = "Github"
-    url = "categories/github"
-    weight = 5
-
-[[menu.main]]
-    parent = "Categories"
-    name = "Serverless"
-    url = "categories/serverless"
-    weight = 6
-
-[[menu.main]]
-    parent = "Categories"
-    name = "Service Mesh"
-    url = "categories/service-mesh"
-    weight = 7
-
+	
 [[menu.main]]
     parent = "Categories"
     name = "Tags"
     url = "tags"
-    weight = 8
-	
+    weight = 4
+
 [[menu.main]]
     name = "About"
     url = "about"

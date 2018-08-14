@@ -1,181 +1,51 @@
 ---
 title: "Kalyan Post1"
 date: 2018-08-13T11:46:25+05:30
-#bigimg: [{src: "https://ws1.sinaimg.cn/large/00704eQkgy1fsazo12js7j30xc0c5auf.jpg", desc: "Flowers|Hangzhou|Apr 5,2018"}]
-bigimg: [{src: "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA1.jpg", desc: "Flowers|Hangzhou|Apr 5,2018"}]
 draft: false
 notoc: true
+tags: ["kubernetes"]
 categories: ["kubernetes"]
+bigimg: [{src: "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA4.jpg", desc: "Post1|Apr 7,2018"}]
 ---
 
-The previous sections talked about how to access kubneretes clusters, mainly on access to this article kubenretes in the Pod and centralized way Serivce, and include the following:
+### Pods
+What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
-- hostNetwork
-- hostPort
-- NodePort
-- LoadBalancer
-- Ingress
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
-In fact, she said to be exposed with the exposure Pod Service is one thing, because of the Pod is the backend Service.
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum vulputate leo nec nulla maximus, elementum dignissim lacus porttitor. Aliquam pharetra placerat eros, non gravida nisi tincidunt quis. Nunc id pulvinar nibh. Sed ac gravida nunc, mollis congue neque. Donec et pellentesque urna. Morbi sem massa, maximus malesuada porta vitae, congue vel justo. Sed et quam sed quam pharetra rhoncus et non urna.
 
-## hostNetwork: true
+Sed sit amet magna eget nunc vehicula faucibus non laoreet diam. Cras pellentesque diam quis libero molestie, vel scelerisque enim tristique. Nulla nec gravida orci. Nulla sit amet magna lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam lacus leo, pellentesque at porta et, consectetur vitae dolor. Pellentesque ac luctus augue. Nunc a neque et odio aliquet euismod vitae in justo. Nulla id consequat ex, quis pulvinar nisi. In porta tincidunt maximus.
 
-This is a direct way of the network defined Pod.
+Morbi scelerisque enim tellus, id varius elit volutpat eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ut nisl a nulla egestas gravida. Nulla vel tellus nec sem tempor placerat. Nam aliquet orci vel augue sagittis sagittis. In magna enim, mattis eget congue vel, tincidunt laoreet lectus. Proin bibendum vel leo sed faucibus. Proin facilisis vulputate tellus non varius. Nunc et felis erat.
 
-If you use `hostNetwork in the Pod: true` configured, applications running in this pod can directly see the start of the network interface pod host. All network interfaces on the host can access to the application. The following are examples of the host network defined pod of:
+Sed id sodales ipsum. Etiam eget suscipit est. Curabitur pharetra laoreet ex in varius. Vestibulum a tellus pulvinar augue luctus venenatis quis et turpis. Praesent malesuada, nibh ac viverra rutrum, dolor lacus consequat sapien, quis interdum velit mauris vitae elit. In hac habitasse platea dictumst. Aenean consequat dolor a porttitor egestas. Nunc ultrices convallis eros, quis suscipit lorem fermentum id. Vivamus facilisis porta lectus quis mollis. Curabitur ex neque, vestibulum lacinia consequat et, tristique non urna. Curabitur consequat, lacus vitae fermentum molestie, nunc massa faucibus dolor, quis elementum massa justo sit amet mauris. Maecenas a tortor vel enim semper tempor a et nibh. Integer porttitor metus non erat elementum congue. Morbi vitae lacus ut mauris interdum facilisis.
 
-`` `Yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: influxdb
-spec:
-  hostNetwork: true
-  containers:
-    - name: influxdb
-      image: influxdb
-`` `
+Sed turpis tortor, egestas ut imperdiet et, euismod eget massa. Morbi euismod ultrices gravida. Nullam consectetur gravida felis id efficitur. Curabitur tincidunt lectus nibh, et faucibus felis vehicula mattis. Proin gravida, enim sit amet tempus feugiat, ligula est finibus mi, a viverra enim diam ac elit. Morbi vel justo non tortor mattis condimentum ut at dui. Cras sodales nunc velit. Nulla finibus feugiat augue, ut tempus ipsum tincidunt a. Nulla quam metus, efficitur a convallis ac, luctus vel nulla. Etiam sed lorem feugiat, eleifend orci at, malesuada mi. Nulla egestas odio in urna blandit sodales. Fusce sollicitudin libero justo, eu tristique ligula placerat non. Duis vitae velit eu est dictum ullamcorper et quis ipsum. Etiam sed finibus arcu. Maecenas accumsan volutpat laoreet. Donec rhoncus venenatis vehicula.
 
-Deploy the Pod:
+Nam semper ipsum laoreet, pharetra felis sed, facilisis lacus. Praesent leo ipsum, condimentum fringilla lorem id, condimentum eleifend augue. Sed malesuada ex et lorem interdum, a posuere erat porta. Vestibulum id tellus quis sem porttitor finibus. Praesent et lobortis tortor. Mauris lacinia dui quam, vitae efficitur velit vestibulum id. Donec vitae metus ipsum. Suspendisse potenti. Maecenas feugiat, elit quis feugiat fringilla, eros ipsum imperdiet libero, quis porta augue ante non mauris. Proin id mi sit amet mi elementum consectetur nec sit amet dolor.
 
-`` `Bash
-$ Kubectl create -f influxdb-hostnetwork.yml
-`` `
+Ut accumsan sagittis magna, eu luctus quam ullamcorper nec. Nulla vel efficitur enim. Aliquam nec dapibus libero. Donec feugiat libero quis mi molestie faucibus eu et eros. Vivamus semper tellus in pulvinar accumsan. Suspendisse euismod massa sed dolor lacinia pellentesque. Nam vitae purus quis sem porttitor condimentum. Aenean in felis ut augue ultricies imperdiet. Vestibulum cursus, nulla eu aliquet ultrices, mauris arcu laoreet orci, at sodales nisl risus vel ipsum. Curabitur sed dui nulla. In hac habitasse platea dictumst.
 
-Access to the host of the pod where the 8086 port:
+Nullam facilisis metus vel mi ultrices, et pharetra nunc cursus. Nulla facilisi. Maecenas et porta turpis, et eleifend diam. In ligula diam, tincidunt eget elit id, luctus venenatis lorem. Proin mollis convallis vehicula. Vestibulum fringilla leo quis leo imperdiet, placerat dapibus justo condimentum. Sed congue consequat purus vitae iaculis. Etiam at massa molestie, malesuada elit id, aliquam justo. Cras mattis metus eget odio hendrerit venenatis. Duis pretium tortor mauris, vel consequat dui feugiat varius. Phasellus pulvinar nibh ut eros faucibus, posuere maximus neque pellentesque. Nullam a finibus felis. Suspendisse et porttitor mauris. Aliquam posuere urna a sem suscipit vulputate. Integer consequat semper suscipit.
 
-`` `Bash
-curl -v http: // $ POD_IP: 8086 / ping
-`` `
+### Services
+Mauris mattis dolor vitae magna volutpat, nec pellentesque ex sodales. Donec turpis lacus, interdum imperdiet varius et, tincidunt id diam. Pellentesque sed eros a eros posuere lobortis mattis sed elit. Aliquam venenatis ligula in dolor tincidunt bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum sed nisl molestie, feugiat nulla a, imperdiet orci. Sed facilisis sem quis ligula blandit gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur at massa et odio pharetra maximus. Morbi et condimentum lacus, in ullamcorper massa. Morbi ut nibh mattis, fermentum ex in, maximus erat. Phasellus id dui dapibus, finibus purus vitae, feugiat lacus.
 
-204 No Content will see the return code of 204, indicating that a normal visit.
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam sed finibus nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin vitae nulla quis orci varius placerat vitae et dolor. Nulla rhoncus rhoncus augue, in venenatis augue cursus in. Aliquam sed sem facilisis, euismod massa a, lobortis velit. Vestibulum vulputate luctus eros, sed ornare sem tincidunt vel. Nunc vulputate, lectus ac commodo lobortis, quam odio mollis lacus, nec commodo elit ex sed elit. Nulla sed euismod elit.
 
-Note that every time you start the Pod when they are likely to be scheduled on different nodes, all external access Pod of IP is change, and the time schedule Pod also need to consider whether the port conflict on the host, so under normal circumstances unless You need to know a particular application occupies a particular port on a particular host when using `hostNetwork: true` way.
+Duis imperdiet mi id mi sagittis vehicula. Nullam et diam tellus. Donec finibus ac arcu ac accumsan. Vivamus convallis semper nisl, id commodo tortor varius ornare. Pellentesque eget neque viverra, ullamcorper velit a, scelerisque lectus. Sed maximus at nisl eget sagittis. Proin vulputate at odio ornare lacinia. Nullam faucibus semper massa nec volutpat. Integer sollicitudin interdum turpis, non blandit nisi tincidunt tempus. Donec ac massa a mi laoreet euismod. Vivamus eget velit eros. Curabitur arcu leo, congue sit amet finibus id, tempus ut ipsum. Sed lacus nisl, mollis ut iaculis id, vulputate vel est. In sit amet placerat libero. Nulla quis est dui.
 
-This Pod network model is that we can use a network plug and then wrapped in Pod deployed on each host, so that it can control all the Pod on the host network.
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas venenatis hendrerit justo, sed finibus tortor auctor a. Donec tristique vehicula nisl, vitae mattis mauris accumsan eu. Nulla facilisi. Quisque sit amet erat sit amet diam porttitor euismod. Nam tortor justo, commodo eu faucibus quis, mollis at justo. Fusce iaculis leo sit amet tempus scelerisque. Praesent pellentesque maximus imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed lorem orci, ullamcorper at semper facilisis, imperdiet in nisl. Suspendisse non auctor elit, sed blandit turpis. In hac habitasse platea dictumst. Nulla vehicula turpis a diam aliquam, sit amet dignissim est porttitor. Vestibulum laoreet, velit pellentesque lobortis condimentum, mi nisi lacinia purus, at cursus ante nunc eget mi.
 
-## hostPort
+Quisque at convallis sem, gravida bibendum est. Vivamus vehicula aliquet tortor quis bibendum. Integer faucibus pellentesque sem vel sagittis. Vivamus urna risus, tempor vel nunc ut, luctus ornare massa. Morbi tempus, mi sollicitudin ullamcorper porta, orci turpis volutpat leo, eget cursus purus velit vel nunc. Nulla convallis nulla a bibendum porta. Nunc accumsan justo sed nisl porttitor sollicitudin. Praesent vel sapien eu tortor laoreet hendrerit. Morbi viverra neque in quam ornare volutpat. Phasellus quis libero at nulla efficitur finibus nec at lorem. Nunc a dapibus nibh. Nullam suscipit sodales quam in aliquam. Sed ac tincidunt nulla. Duis ultricies nibh volutpat vulputate vulputate. Aliquam sodales tellus ut auctor lacinia.
 
-This is a direct way of the network defined Pod.
+Sed molestie tortor nec sem tempor, in interdum ante tincidunt. Fusce lobortis, neque volutpat suscipit euismod, arcu est varius lorem, vel rhoncus turpis sem lobortis mauris. Sed ut justo elementum, venenatis nunc sed, vulputate mauris. Nunc condimentum libero ipsum, ac semper odio luctus a. Integer dui libero, mollis pulvinar erat non, mattis maximus risus. Cras eget enim vitae arcu aliquam tristique. Nulla pharetra ornare sollicitudin. Phasellus nec posuere enim, at euismod sapien. Morbi et lobortis eros. Mauris eu metus eu risus venenatis facilisis ut id metus.
 
-`HostPort` routed directly on the container port and the port node scheduled so that users can add the IP host <hostPort> Pod to access, such as the <hostIP>: <hostPort>.
+Nulla non euismod tortor, vitae maximus leo. Cras faucibus rhoncus velit eu blandit. Donec diam sem, sollicitudin vitae mauris eu, egestas ultrices metus. Nulla urna dolor, tempus eget tellus sed, molestie placerat massa. Curabitur iaculis, lacus quis gravida convallis, eros tortor sollicitudin sapien, ac laoreet mauris tellus eget odio. Sed quis purus augue. Duis et felis fringilla, facilisis quam sed, malesuada felis.
 
-`` `Yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: influxdb
-spec:
-  containers:
-    - name: influxdb
-      image: influxdb
-      ports:
-        - containerPort: 8086
-          hostPort: 8086
-`` `
+Integer nulla nisi, mollis vel mi semper, accumsan malesuada ligula. Mauris hendrerit libero neque, vitae fermentum justo viverra sed. Sed gravida luctus scelerisque. Mauris leo neque, feugiat id mauris at, suscipit tempus lorem. Pellentesque efficitur, augue nec sollicitudin tincidunt, lacus erat congue nibh, non porttitor purus sapien eget risus. Curabitur quis enim posuere, facilisis mi in, aliquet ipsum. Aliquam ullamcorper, velit non imperdiet condimentum, dolor libero dictum sapien, nec finibus ligula risus pharetra dui. In porta ultrices leo, non volutpat sapien auctor et. Curabitur auctor, leo sit amet elementum porta, lacus mauris mattis ipsum, et semper risus purus sed ligula.
 
-This has the disadvantage in that when the rescheduled Pod Pod is subject to change scheduled to host, so <hostIP> to change, the user must maintain a correspondence between the Pod and where the host of his own.
-
-This way a network can be used for nginx [Ingress controller] (https://github.com/kubernetes/ingress/tree/master/controllers/nginx). 80 and 443 external traffic must go through the kubenretes node node.
-
-## NodePort
-
-NodePort in kubenretes there is a widely used service exposure mode. `ClusterIP` Kubernetes in default under the service of this type are used, this service will have a ClusterIP, the IP can only be accessed within the cluster, to get an external service can be accessed directly, we need to modify the service type `nodePort`.
-
-`` `Yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: influxdb
-  labels:
-    name: influxdb
-spec:
-  containers:
-    - name: influxdb
-      image: influxdb
-      ports:
-        - containerPort: 8086
-`` `
-
-To the service can also specify a value `nodePort`, 30000-32767 range, the value in the API server configuration file, defined by the` --service-node-port-range`.
-
-`` `Yaml
-kind: Service
-apiVersion: v1
-metadata:
-  name: influxdb
-spec:
-  type: NodePort
-  ports:
-    - port: 8086
-      nodePort: 30000
-  selector:
-    name: influxdb
-`` `
-
-Outside the cluster can be used kubernetes any node of IP port access to the 30,000 plus a service. kube-proxy automatically forwards the traffic to each pod of the service in round-robin fashion.
-
-This service exposure mode, you can not let you specify a port commonly used applications they want, but you can deploy a reverse proxy as a flow inlet on the cluster.
-
-## LoadBalancer
-
-`LoadBalancer` can only be defined on the service. This is provided by public cloud load balancer, such as AWS, Azure, CloudStack, GCE and the like.
-
-`` `Yaml
-kind: Service
-apiVersion: v1
-metadata:
-  name: influxdb
-spec:
-  type: LoadBalancer
-  ports:
-    - port: 8086
-  selector:
-    name: influxdb
-`` `
-
-View Services:
-
-`` `Bash
-$ Kubectl get svc influxdb
-NAME CLUSTER-IP EXTERNAL-IP PORT (S) AGE
-influxdb 10.97.121.42 10.13.242.236 8086: 30051 / TCP 39s
-`` `
-
-You can use ClusterIP internal port plus access to services such as 19.97.121.42:8086.
-
-Outside you can access the service in two ways:
-
-- Use any node of IP plus port 30051 to access the service
-- Use `EXTERNAL-IP` to access, this is a VIP, is a cloud vendor load balancer IP, such as 10.13.242.236:8086.
-
-## Ingress
-
-`Ingress` resource type since the introduction of version kubernetes1.1. You must be deployed [Ingress controller] (https://github.com/kubernetes/ingress/tree/master/controllers/nginx) in order to create Ingress resources, Ingress controller is a form of plug-ins available. Ingress controller is deployed on Kubernetes of Docker containers. It's like Docker image contains a HAProxy or nginx load balancer and a controller daemon. Controller configure daemon required for reception from Kubernetes Ingress. It will generate a nginx or HAProxy configuration file, and restart the load balancer process for the changes to take effect. In other words, Ingress controller by the load balancer Kubernetes management.
-
-Kubernetes Ingress load balancer provides typical properties: HTTP routing, sticky session, the SSL termination, through the SSL, TCP and UDP load balancing. Currently not all Ingress controller implements these features, you need to see the specific Ingress controller documentation.
-
-`` `Yaml
-apiVersion: extensions / v1beta1
-kind: Ingress
-metadata:
-  name: influxdb
-spec:
-  rules:
-    - host: influxdb.kube.example.com
-      http:
-        paths:
-          - backend:
-              serviceName: influxdb
-              servicePort: 8086
-`` `
-
-External Access URL http://influxdb.kube.example.com/ping access the service, port 80 is the entrance, then Ingress controller directly to forward traffic to the back-end Pod, do not need to go through forwards kube-proxy, more than LoadBalancer way more efficient.
-
-## to sum up
-
-Overall Ingress is a very flexible and vendor support services has been more exposure, including Nginx, HAProxy, Traefik, there are a variety Service Mesh, and other services may be more suitable for exposure mode debugging services, special applications deploy.
-
-## Reference
-
-[Accessing Kubernetes Pods from Outside of the Cluster - alesnosek.com] (http://alesnosek.com/blog/2017/02/14/accessing-kubernetes-pods-from-outside-of-the-cluster/)
+In pulvinar quam nibh, sed pellentesque lorem porta eu. Phasellus pharetra pretium sapien, nec imperdiet risus vulputate quis. Morbi consequat mi ut felis efficitur, eu finibus eros placerat. Mauris ultricies dictum nisl nec efficitur. Aenean fringilla lorem diam, quis sagittis sem iaculis id. Fusce nunc odio, porttitor et risus nec, venenatis bibendum sapien. Aenean sit amet lacus mollis, varius metus quis, fermentum est. Proin finibus elit sed metus tempus, eu condimentum felis dapibus. Nam placerat mauris mauris, vitae tempus nunc lacinia a. Aliquam luctus nisl nec mauris scelerisque convallis. Vivamus tellus augue, vulputate non fringilla in, aliquet non purus. Nam ornare tellus sollicitudin mi lobortis, sit amet laoreet purus congue. Proin bibendum sem ac sollicitudin dictum. Maecenas bibendum laoreet leo, et egestas lacus sollicitudin eu. Quisque egestas mauris non sapien iaculis, quis commodo nunc eleifend. Sed eget sapien sed quam feugiat convallis in in augue.

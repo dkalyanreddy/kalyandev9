@@ -1,12 +1,13 @@
 ---
-title: "Kalyan Post2"
-date: 2018-08-14T10:14:51+05:30
+title: "Kalyan Post5"
+date: 2018-08-14T12:38:24+05:30
 draft: false
 notoc: true
 tags: ["kubernetes"]
 categories: ["kubernetes"]
-bigimg: [{src: "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA4.jpg", desc: "Post2|Apr 7,2018"}]
+bigimg: [{src: "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA2.jpg", desc: "Post5|Apr 5,2018"}]
 ---
+
 ### Pods
 What is Lorem Ipsum?
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum

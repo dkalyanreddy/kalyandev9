@@ -1,12 +1,13 @@
 ---
-title: "Kalyan Post2"
-date: 2018-08-14T10:14:51+05:30
+title: "Aws1"
+date: 2018-08-14T13:17:46+05:30
 draft: false
 notoc: true
-tags: ["kubernetes"]
-categories: ["kubernetes"]
-bigimg: [{src: "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA4.jpg", desc: "Post2|Apr 7,2018"}]
+tags: ["aws"]
+categories: ["aws"]
+bigimg: [{src: "https://res.cloudinary.com/kalyanreddy/image/upload/v1534150590/kalyan-blog/USA2.jpg", desc: "Brooklyn Bridge|Apr 5,2018"}]
 ---
+
 ### Pods
 What is Lorem Ipsum?
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
@@ -48,3 +49,4 @@ Nulla non euismod tortor, vitae maximus leo. Cras faucibus rhoncus velit eu blan
 Integer nulla nisi, mollis vel mi semper, accumsan malesuada ligula. Mauris hendrerit libero neque, vitae fermentum justo viverra sed. Sed gravida luctus scelerisque. Mauris leo neque, feugiat id mauris at, suscipit tempus lorem. Pellentesque efficitur, augue nec sollicitudin tincidunt, lacus erat congue nibh, non porttitor purus sapien eget risus. Curabitur quis enim posuere, facilisis mi in, aliquet ipsum. Aliquam ullamcorper, velit non imperdiet condimentum, dolor libero dictum sapien, nec finibus ligula risus pharetra dui. In porta ultrices leo, non volutpat sapien auctor et. Curabitur auctor, leo sit amet elementum porta, lacus mauris mattis ipsum, et semper risus purus sed ligula.
 
 In pulvinar quam nibh, sed pellentesque lorem porta eu. Phasellus pharetra pretium sapien, nec imperdiet risus vulputate quis. Morbi consequat mi ut felis efficitur, eu finibus eros placerat. Mauris ultricies dictum nisl nec efficitur. Aenean fringilla lorem diam, quis sagittis sem iaculis id. Fusce nunc odio, porttitor et risus nec, venenatis bibendum sapien. Aenean sit amet lacus mollis, varius metus quis, fermentum est. Proin finibus elit sed metus tempus, eu condimentum felis dapibus. Nam placerat mauris mauris, vitae tempus nunc lacinia a. Aliquam luctus nisl nec mauris scelerisque convallis. Vivamus tellus augue, vulputate non fringilla in, aliquet non purus. Nam ornare tellus sollicitudin mi lobortis, sit amet laoreet purus congue. Proin bibendum sem ac sollicitudin dictum. Maecenas bibendum laoreet leo, et egestas lacus sollicitudin eu. Quisque egestas mauris non sapien iaculis, quis commodo nunc eleifend. Sed eget sapien sed quam feugiat convallis in in augue.
+
